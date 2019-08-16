@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fibonacci", "Fibonacci\Fibonacci.vcproj", "{013225F8-AD00-4221-ABB6-746A2B595E7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{013225F8-AD00-4221-ABB6-746A2B595E7B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{013225F8-AD00-4221-ABB6-746A2B595E7B}.Debug|Win32.Build.0 = Debug|Win32
+		{013225F8-AD00-4221-ABB6-746A2B595E7B}.Release|Win32.ActiveCfg = Release|Win32
+		{013225F8-AD00-4221-ABB6-746A2B595E7B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
