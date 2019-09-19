@@ -46,20 +46,28 @@ int solution(int n, vector<int> lost, vector<int> reserve) {
 	// 체육복 여유 있는 친구들
 	for (auto alp : reserve)
 		result[alp-1]++;
+
+	// 체육복 도난 당한 친구들
+	// 여유있는 , 도난 둘다 해당하는 친구들이 있어 미리 제거.
+	for (auto alp : lost)
+		result[alp-1]--;
 	
-	// 체육보 없는 친구들
+	// 체육복 없는 친구들
 	for (auto alp : lost)
 	{
-		if (result[alp - 2] > 1)
+		if (result[alp - 1] == 0)
 		{
-			result[alp - 2]--;
+			if (result[alp - 2] > 1)
+			{
+				result[alp - 2]--;
+				result[alp - 1]++;
+			}
+			else if (result[alp] > 1)
+			{
+				result[alp]--;
+				result[alp - 1]++;
+			}
 		}
-		else if (result[alp] > 1)
-		{
-			result[alp]--;
-		}
-		else
-			result[alp - 1]--;
 	}
 
 	for (int i = 0; i < n; i++)
@@ -70,10 +78,11 @@ int solution(int n, vector<int> lost, vector<int> reserve) {
 	return answer;
 }
 
-vector<int> vlost = { 2, 4 };
+//vector<int> vlost = { 2, 4 };
 //vector<int> vreserve = { 1, 3, 5 };
+vector<int> vlost = { 1, 2, 3, 5 };
 
-vector<int> vreserve = { 3 };
+vector<int> vreserve = { 1, 3, 4, 5 };
 
 int main()
 {
