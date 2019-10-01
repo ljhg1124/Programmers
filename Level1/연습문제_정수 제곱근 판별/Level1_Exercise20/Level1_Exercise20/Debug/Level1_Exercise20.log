@@ -1,0 +1,4 @@
+﻿  Main.cpp
+d:\programmers\level1\연습문제_정수 제곱근 판별\level1_exercise20\level1_exercise20\main.cpp(37): warning C4244: '초기화 중': 'double'에서 '__int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\programmers\level1\연습문제_정수 제곱근 판별\level1_exercise20\level1_exercise20\main.cpp(38): warning C4244: '초기화 중': 'double'에서 '__int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Level1_Exercise20.vcxproj -> D:\Programmers\Level1\연습문제_정수 제곱근 판별\Level1_Exercise20\Debug\Level1_Exercise20.exe
