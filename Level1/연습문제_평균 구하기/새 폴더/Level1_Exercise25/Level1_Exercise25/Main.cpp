@@ -25,6 +25,10 @@ using namespace std;
 double solution(vector<int> arr)
 {
 	double answer = 0;
+
+	// #include <numeric>  - accumulate(시작, 끝, 0) 배열 총합 함수
+	// double answer = accumulate(arr.begin(), arr.end(), 0);
+
 	for (auto alp : arr)
 	{
 		answer += alp;
