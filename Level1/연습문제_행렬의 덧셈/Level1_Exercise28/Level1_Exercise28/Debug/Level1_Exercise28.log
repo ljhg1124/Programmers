@@ -1,0 +1,4 @@
+﻿  Main.cpp
+d:\programmers\level1\연습문제_행렬의 덧셈\level1_exercise28\level1_exercise28\main.cpp(27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\programmers\level1\연습문제_행렬의 덧셈\level1_exercise28\level1_exercise28\main.cpp(30): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Level1_Exercise28.vcxproj -> D:\Programmers\Level1\연습문제_행렬의 덧셈\Level1_Exercise28\Debug\Level1_Exercise28.exe
