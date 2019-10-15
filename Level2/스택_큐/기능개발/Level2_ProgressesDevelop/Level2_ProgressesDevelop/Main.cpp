@@ -32,47 +32,42 @@ progresses	speeds		return
 
 #include <string>
 #include <vector>
-
+#include <queue>
 using namespace std;
 
-vector<int> solution(vector<int> progresses, vector<int> speeds) {
+vector<int> solution(vector<int> progresses, vector<int> speeds)
+{
 	vector<int> answer;
-	vector<pair<int,bool>> chk;
-
+	queue<int> chk;
 	int len = progresses.size();
-	int lp = 0;
 
+	// 몇일이 소요되는지 선 계산.
 	for (int i = 0; i < len; i++)
 	{
-		chk.push_back(make_pair(progresses[i], false));
+		chk.push((100 - progresses[i]) / speeds[i]);
 	}
 
-	while (true)
+	// 배포 계산.
+	int resultCount = 1;
+	int cut = chk.front();
+	chk.pop();
+	while (!chk.empty())
 	{
-		int count = 0;
-
-		for (int i = lp; i < len; i++)
+		if (chk.front() <= cut)
 		{
-			chk[i].first += speeds[i];
-
-			if (chk[i].first >= 100) chk[i].second = true;
-
-			if (chk[i].second)
-			{
-				count++;
-
-				if(chk[i-1].second == true)
-				{
-					lp += count;
-					answer.push_back(count);
-					continue;
-				}
-			}
+			chk.pop();
+			resultCount++;
 		}
-			
-		if (lp >= len) break;
+		else
+		{
+			answer.push_back(resultCount);
+			resultCount = 1;
+			cut = chk.front();
+			chk.pop();
+		}
+		
 	}
-
+	answer.push_back(resultCount);
 	return answer;
 }
 
@@ -83,6 +78,9 @@ int main(void)
 
 	//vector<int> progresses = { 90, 90, 90, 90, 90, 90, 90 };
 	//vector<int> speeds = { 3, 2, 5, 1, 1, 2, 1 };
+
+	//vector<int> progresses = { 5, 5, 5 };
+	//vector<int> speeds = { 21, 25, 20 };
 
 	solution(progresses, speeds);
 	return 0;
