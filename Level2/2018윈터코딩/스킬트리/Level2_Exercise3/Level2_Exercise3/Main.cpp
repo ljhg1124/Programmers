@@ -53,7 +53,30 @@ bool Chk_Skill(string skill, char c)
 
 int solution(string skill, vector<string> skill_trees) {
 	int answer = 0;
+	
+	for (auto alp : skill_trees)
+	{
+		string result;
+		bool   Chk = true;
 
+		for (auto salp : alp)
+		{
+			if (Chk_Skill(skill, salp))
+			{
+				result.push_back(salp);
+			}
+		}
+
+		for (size_t i = 0; i < result.size(); i++)
+		{
+			if (result[i] != skill[i])
+			{
+				Chk = false;
+				break;
+			}
+		}
+		if( Chk ) answer++;
+	}
 	return answer;
 }
 
