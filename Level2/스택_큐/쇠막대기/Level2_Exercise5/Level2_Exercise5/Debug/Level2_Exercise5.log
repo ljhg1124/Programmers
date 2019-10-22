@@ -1,0 +1,4 @@
+﻿  Main.cpp
+d:\programmers\level2\스택_큐\쇠막대기\level2_exercise5\level2_exercise5\main.cpp(46): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\programmers\level2\스택_큐\쇠막대기\level2_exercise5\level2_exercise5\main.cpp(51): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Level2_Exercise5.vcxproj -> D:\Programmers\Level2\스택_큐\쇠막대기\Level2_Exercise5\Debug\Level2_Exercise5.exe
