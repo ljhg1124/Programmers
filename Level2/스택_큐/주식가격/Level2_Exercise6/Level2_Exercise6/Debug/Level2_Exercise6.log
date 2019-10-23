@@ -1,0 +1,4 @@
+﻿  Main.cpp
+d:\programmers\level2\스택_큐\주식가격\level2_exercise6\level2_exercise6\main.cpp(39): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\programmers\level2\스택_큐\주식가격\level2_exercise6\level2_exercise6\main.cpp(42): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Level2_Exercise6.vcxproj -> D:\Programmers\Level2\스택_큐\주식가격\Level2_Exercise6\Debug\Level2_Exercise6.exe
