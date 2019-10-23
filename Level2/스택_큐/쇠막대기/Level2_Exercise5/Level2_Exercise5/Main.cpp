@@ -43,26 +43,26 @@ int solution(string arrangement) {
 
 	for (int i = 0; i < len; i++)
 	{
-		if (arrangement[i] == '(' && i + 1 < arrangement.size() && arrangement[i + 1] == ')')
+		if (arrangement[i] == '(')
 		{
-			answer += stic.size();
-			continue;
-		}
-		else if (arrangement[i] == '(' && i + 1 < arrangement.size() && arrangement[i + 1] != ')')
-		{
-			stic.push('(');
+			if (arrangement[i + 1] == ')')
+			{
+				answer += stic.size();
+				i++;
+				continue;
+			}
+			else if (arrangement[i + 1] != ')')
+			{
+				stic.push('(');
+			}
 		}
 		else if (arrangement[i] == ')')
 		{
-			if (!stic.empty())
-			{
-				stic.pop();
-				answer++;
-			}
+			stic.pop();
+			answer++;
 		}
 	}
 	
-
 	return answer;
 }
 
