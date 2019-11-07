@@ -1,0 +1,24 @@
+# 1 "d:\\Programmers\\.vscode\\tasks.json"
+# 1 "c:\\MinGW\\bin//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "d:\\Programmers\\.vscode\\tasks.json"
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cpp.exe build active file",
+            "command": "C:\\MinGW\\bin\\cpp.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}

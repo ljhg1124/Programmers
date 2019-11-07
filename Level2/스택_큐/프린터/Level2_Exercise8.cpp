@@ -40,14 +40,39 @@ priorities	        location	return
 
 #include <string>
 #include <vector>
+#include <queue>
+#include <algorithm>
 
 using namespace std;
 
 int solution(vector<int> priorities, int location)
  {
-    int answer = 0;
+    int answer = 1;
+    int LankPos = 0;
+    int cur = priorities.front();
+
+    // 1등 위치 찾기.
+    for (int i = 1; i < priorities.size(); i++)
+    {
+        if( cur < priorities[i])
+        {
+            cur = priorities[i];
+            LankPos = i;
+        }
+     }
+
     
-    int cut = *priorities.begin();
+     printf("%d \n", LankPos);  // 디버그
+
+    for(int i = 1; i < priorities.size(); i++)
+    {        
+        if( i != location && priorities[i] >= priorities[location] )
+        {
+            if(i >= LankPos)
+                answer++;
+        }
+    }
+
     return answer;
 }
 
