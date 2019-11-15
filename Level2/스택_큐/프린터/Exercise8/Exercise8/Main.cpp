@@ -49,13 +49,27 @@ using namespace std;
 int solution(vector<int> priorities, int location)
 {
 	int answer = 0;
-	int len = priorities.size();
+	int arr[100] = { 0, };
+	int ip = 0;
+	int lank = 1;
+	int len = priorities.size()-1;
+	vector<int> v = priorities;
+	vector<int>::iterator vit;
+	
+	while (!v.empty())
+	{
+		vit = max_element(v.begin(), v.end());
+		if(priorities[ip] == *vit)
+		{
+			arr[ip] = lank;
 
-	vector<int>::iterator it = max_element(priorities.begin(), priorities.end());
-	int lank = *it;
-	
-	//priorities.erase(it);
-	
+			v.erase(vit);
+			lank++;
+		}
+
+		ip = ip == len ? 0 : ip+1;
+	}
+	answer = arr[location];
 
 	return answer;
 }
@@ -64,8 +78,8 @@ int main(void)
 {
 	int result = 0;
 
-	vector<int> priorities = { 1, 1, 9, 1, 1, 1 };
-	result = solution(priorities, 0);
+	vector<int> priorities = { 2, 1, 3, 2 };
+	result = solution(priorities, 2);
 
 	printf("%d", result);
 

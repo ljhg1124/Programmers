@@ -1,2 +1,2 @@
 ﻿  Main.cpp
-  Exercise8.vcxproj -> D:\Programmers\Level2\스택_큐\프린터\Exercise8\Debug\Exercise8.exe
+d:\programmers\level2\스택_큐\프린터\exercise8\exercise8\main.cpp(60): error C3861: 'max_element': 식별자를 찾을 수 없습니다.
