@@ -23,47 +23,65 @@ W	H	result
 가로가 8, 세로가 12인 직사각형을 대각선 방향으로 자르면 총 16개 정사각형을 사용할 수 없게 됩니다. 원래 직사각형에서는 96개의 정사각형을 만들 수 있었으므로, 96 - 16 = 80 을 반환합니다.
 
 */
+
+/*
+	직선의 공식 : y = ax + b			// a: 기울기 , b는 y의 절편 
+
+
+*/
 #include <stdio.h>
+#include <algorithm>
 
 using namespace std;
+
+// 각도 구하기.
+double make_Angle(int x1, int y1, int x2, int y2)
+{
+	return (y2 - y1) / (x2 - x1);
+}
+
+// Y 절편 구하기
+double make_axisY(int x, int y, double ang)
+{
+	return y - ang * x;
+}
 
 long long solution(int w, int h)
 {
 	long long answer = 1;
-	int y = 0;
 
-	for (int i = 1; i < w*h+1; i++)
+	double m = make_Angle(0, 0, w, h);		// 기울기
+	double b = make_axisY(0, 0, m);			// y 절편
+
+	for (int i = 1; i <= w*h; i++)
 	{
-
-		if(i == 1 || i == w*h)
-			printf("*");
-		else printf(" ");
+		printf("*");
 
 		if (i % w == 0) printf("\n");
-	}
-	
 
+	}
+
+	/*
+	for (int i = 0; i < h; i++)
+	{
+		for (int j = 0; j < w; j++)
+		{
+			if(j == (int)(m*i+b)) printf("*");
+			else			 printf(" ");
+		}
+
+		
+	}
+	*/
+	printf("\n\n 기울기:%.f", m);
 
 	return answer;
 }
 
 int main(void)
 {
-	solution(9, 12);
+	solution(8, 12);
 
 	
 	return 0;
 }
-
-
-/*
-
-두점이 주어질 때의 직선
-두 점(x1, y1), (x2, y2)를 지나는 직선은
-y = (y2 - y1) / (x2 - x1) * (x - x1) + y1 으로 표현한다.
-
-예 ) 두 점 (1,2) (3,6)을 지나는 직선
-y = (6 - 2) / (3 - 1) * (x - 1) + 2 = 2x
-
-출처: https://wonjayk.tistory.com/85 [배고파서 까먹고 만든 블로그]
-*/
