@@ -35,31 +35,41 @@ scoville				K	return
 
 #include <string>
 #include <vector>
-#include <algorithm>
+#include <queue>
+
 using namespace std;
 
 int solution(vector<int> scoville, int K) {
 	int answer = 0;
+	priority_queue< int, vector<int>, greater<int> > q;
 
-	make_heap(scoville.begin(), scoville.end());
-
-	while (!scoville.empty())
+	for (int i = 0; i < scoville.size(); i++)
 	{
-		pop_heap(scoville.begin(), scoville.end());
-
-		if (scoville.back() >= K)
-		{
-			scoville.pop_back();
-		}
+		q.push(scoville[i]);
 	}
-
 	
+	while (q.top() < K)
+	{
+		int Mix = q.top();
+		q.pop();
+
+		Mix += q.top() * 2;
+		q.pop();
+
+		q.push(Mix);
+
+		answer++;
+	}
+	
+	// 스코빌 지수가 0이면 -1 리턴
+	if (answer == 0) answer = -1;
+
 	return answer;
 }
 
 int main(void)
 {
-	vector<int> scoville = {3, 2, 10, 9, 10, 12};
+	vector<int> scoville = {1, 2, 3, 9, 10, 12};
 
 	solution(scoville, 7);
 
