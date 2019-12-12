@@ -41,23 +41,28 @@ using namespace std;
 
 int solution(vector<int> scoville, int K) {
 	int answer = 0;
+	int len = scoville.size();
 	priority_queue< int, vector<int>, greater<int> > q;
 
-	for (int i = 0; i < scoville.size(); i++)
+	for (int i = 0; i < len; i++)
 	{
 		q.push(scoville[i]);
 	}
 	
+	// ½ºÄÚºô Áö¼ö°¡ ³·À¸¸é
 	while (q.top() < K)
 	{
-		int Mix = q.top();
+		int r = 0;
+		if (q.size() < 2) break;
+
+		r = q.top();
 		q.pop();
 
-		Mix += q.top() * 2;
+		r += q.top() * 2;
 		q.pop();
 
-		q.push(Mix);
 
+		q.push(r);
 		answer++;
 	}
 	
@@ -69,7 +74,7 @@ int solution(vector<int> scoville, int K) {
 
 int main(void)
 {
-	vector<int> scoville = {1, 2, 3, 9, 10, 12};
+	vector<int> scoville = {3};
 
 	solution(scoville, 7);
 
