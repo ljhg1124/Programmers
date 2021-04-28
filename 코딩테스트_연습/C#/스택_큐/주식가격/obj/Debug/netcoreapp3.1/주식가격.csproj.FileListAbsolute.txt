@@ -1,0 +1,13 @@
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\obj\Debug\netcoreapp3.1\주식가격.csprojAssemblyReference.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\obj\Debug\netcoreapp3.1\주식가격.AssemblyInfoInputs.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\obj\Debug\netcoreapp3.1\주식가격.AssemblyInfo.cs
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\obj\Debug\netcoreapp3.1\주식가격.csproj.CoreCompileInputs.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\bin\Debug\netcoreapp3.1\주식가격.exe
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\bin\Debug\netcoreapp3.1\주식가격.deps.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\bin\Debug\netcoreapp3.1\주식가격.runtimeconfig.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\bin\Debug\netcoreapp3.1\주식가격.runtimeconfig.dev.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\bin\Debug\netcoreapp3.1\주식가격.dll
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\bin\Debug\netcoreapp3.1\주식가격.pdb
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\obj\Debug\netcoreapp3.1\주식가격.dll
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\obj\Debug\netcoreapp3.1\주식가격.pdb
+D:\Programmers\코딩테스트_연습\C#\스택_큐\주식가격\obj\Debug\netcoreapp3.1\주식가격.genruntimeconfig.cache
