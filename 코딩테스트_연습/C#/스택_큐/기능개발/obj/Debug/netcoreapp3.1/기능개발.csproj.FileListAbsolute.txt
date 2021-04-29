@@ -1,0 +1,13 @@
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\bin\Debug\netcoreapp3.1\기능개발.exe
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\bin\Debug\netcoreapp3.1\기능개발.deps.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\bin\Debug\netcoreapp3.1\기능개발.runtimeconfig.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\bin\Debug\netcoreapp3.1\기능개발.runtimeconfig.dev.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\bin\Debug\netcoreapp3.1\기능개발.dll
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\bin\Debug\netcoreapp3.1\기능개발.pdb
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\obj\Debug\netcoreapp3.1\기능개발.csprojAssemblyReference.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\obj\Debug\netcoreapp3.1\기능개발.AssemblyInfoInputs.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\obj\Debug\netcoreapp3.1\기능개발.AssemblyInfo.cs
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\obj\Debug\netcoreapp3.1\기능개발.csproj.CoreCompileInputs.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\obj\Debug\netcoreapp3.1\기능개발.dll
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\obj\Debug\netcoreapp3.1\기능개발.pdb
+D:\Programmers\코딩테스트_연습\C#\스택_큐\기능개발\obj\Debug\netcoreapp3.1\기능개발.genruntimeconfig.cache
