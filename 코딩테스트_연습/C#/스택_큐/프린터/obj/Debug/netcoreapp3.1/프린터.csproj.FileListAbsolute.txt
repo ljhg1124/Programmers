@@ -1,0 +1,13 @@
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\bin\Debug\netcoreapp3.1\프린터.exe
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\bin\Debug\netcoreapp3.1\프린터.deps.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\bin\Debug\netcoreapp3.1\프린터.runtimeconfig.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\bin\Debug\netcoreapp3.1\프린터.runtimeconfig.dev.json
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\bin\Debug\netcoreapp3.1\프린터.dll
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\bin\Debug\netcoreapp3.1\프린터.pdb
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\obj\Debug\netcoreapp3.1\프린터.csprojAssemblyReference.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\obj\Debug\netcoreapp3.1\프린터.AssemblyInfoInputs.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\obj\Debug\netcoreapp3.1\프린터.AssemblyInfo.cs
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\obj\Debug\netcoreapp3.1\프린터.csproj.CoreCompileInputs.cache
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\obj\Debug\netcoreapp3.1\프린터.dll
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\obj\Debug\netcoreapp3.1\프린터.pdb
+D:\Programmers\코딩테스트_연습\C#\스택_큐\프린터\obj\Debug\netcoreapp3.1\프린터.genruntimeconfig.cache
